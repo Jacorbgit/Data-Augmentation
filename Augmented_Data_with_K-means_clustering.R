@@ -1,11 +1,11 @@
 
 # ----------------------------------------------------------------------- column clustering algorithm
 
-dataframe_coludatadataframe_column_grouping <- function(input_df, group_num){
+dataframe_column_grouping <- function(input_df, group_num){
     
     cor_mat <- round(cor(input_df), 3) # correlation matrix
     
-    # The distance matrix will be used so that the grouping based in the 
+    # The distance matrix (aka dissimilarity matrix) will be used so that the grouping based in the 
     # euclidean distance (default for k-clustering in R) returns groups
     # with vectors that are correlated. 
     
