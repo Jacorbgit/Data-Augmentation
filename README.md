@@ -20,3 +20,5 @@ This R code chunk takes in a dataset and forms the dissimilarity matrix (line #1
 ## Augemented_Data_Correlation_Matrix.png
 
 This is the correlation matrix for the augmented data. As we can see the correlations between the columns remain very similar to that of the initial dataset. 
+
+![Correlation_matrix_for_augmented_data](Augmented_Data_Correlation_Matrix.png)
