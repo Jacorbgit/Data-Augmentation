@@ -2,12 +2,15 @@
 # Data Augmentation with K-means clustering algorithm.
 This repository contains R code that augments an existing small tabular data that can then be used for a machine learning algorithm (i.e. neural network, linear regression, random forest etc). The algorithm works by exploiting the k-means clustering algorithm by applying it on the dissimilarity matrix of the data’s columns. Clustering similar columns into groups then randomly permuting rows in those clustered groups effectively “populates” the feature space of the dataset yet maintains the underlying correlations that make up critical relationships of the dataset. The k-means clustering algorithm works using the euclidean distance by default (hence why I apply it on a dissimilarity matrix).
 
+![Visualization_of_concept](synthetic_dataset.png)
+
 # Explanation of the Files in this Repository: 
 
 ## Starting_Data_Correlation_Grid.png
 
 This is the correlation matrix for the data. Columns {1,2, and 3} are highly correlated thus would be clustered together by the k-means algorithm while columns {5 and 6} would be in another cluster, while {7 and 8} would be in another (assuming 3 clusters was found to be optimal for the k-means algorithm for this dataset). 
 
+![Initial_correlation_grid](Starting_Data_Correlation_Grid.png)
 
 ## Augmented_Data_with_k-means_Clustering.R
 
